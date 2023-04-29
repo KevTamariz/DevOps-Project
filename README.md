@@ -1,6 +1,8 @@
-# GitOps-Argo
+# DevOps Project
 
 In this project, i want to implement a professional DevOps Project, from the automatization of the IaC, and finishing with the implementation of observability tools like Prometheus and Grafana
+
+Not forgetting the implementation of GitOps in this project with tools like ArgoCD
 
 
 # Infra - Terraform

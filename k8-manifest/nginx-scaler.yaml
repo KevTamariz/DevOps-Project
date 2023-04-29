@@ -1,0 +1,19 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: prometheus-scaledobject
+  namespace: ingress-nginx
+spec:
+  scaleTargetRef:
+    name: nginx-ingress-ingress-nginx-controller
+  minReplicaCount: 1
+  maxReplicaCount: 10
+  pollingInterval: 30                               # Optional. Default: 30 seconds
+  cooldownPeriod: 300
+  triggers:
+  - type: prometheus
+    metadata:
+      serverAddress: http://prometheus-stack-kube-prom-prometheus.monitoring.svc.cluster.local:9090
+      metricName: nginx_connections_active_keda
+      threshold: "100"
+      query: sum(avg_over_time(nginx_ingress_nginx_connections_active[1m]))

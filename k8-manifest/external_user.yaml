@@ -1,0 +1,16 @@
+apiVersion: external-secrets.io/v1beta1
+kind: ExternalSecret
+metadata:
+  name: db-user
+spec:
+  refreshInterval: 1m            # rate SecretManager pulls GCPSM
+  secretStoreRef:
+    kind: ClusterSecretStore
+    name: secrets-store               # name of the SecretStore (or kind specified)
+  target:
+    name: db-user  # name of the k8s Secret to be created
+    creationPolicy: Owner
+  data:
+  - secretKey: secret-access-credentials
+    remoteRef:            
+      key: wp_user 

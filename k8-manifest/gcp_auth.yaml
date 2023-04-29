@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: gcpsm-secret
+  labels:
+    type: gcpsm
+type: Opaque
+stringData:
+  secret-access-credentials: |-
+    {
+      "type": "service_account",
+      "project_id": "w9-challenge",
+      "private_key_id": "809de07a0c6ecadc251ba4b8b0c6ce6be5aab333",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDKLTZGYG17GDW4\n2tHSzKUvNx1hLP4fgIAovyGSb8NWzav+c8JmedGO91IfSVqJURkPKKCPpPi6VLW1\nIA9g7xQrF73SY5SzuhTNUoexwZpsOKnpDJVO179b0xrhwGB7kSjFSEPn9TdtJqU8\n6ZXeu65SILm821a2fcOmLifat+QN8Twf4pbCxaBM6DgwCHT7znGFb1zgyLN36dXX\nQa6lPB7f9EGIUT1XDWF6gkJzDVCxjiNN4ttEjOBZRwL+oXTdk+hKjSlltbJOosLe\nlCcHEsmi2HX7uAjsMWlhV7yV0P4kVfPehTnnaiejchLhN6g9RX4l4I/dkNKIkEyp\nJ4fynT6TAgMBAAECggEADhRf9z634R6qfxkeC6QczND1xtKvT9pPEodc+ym1XNIt\n7CZ7n09UfLRUj8E4AOAY8qlNpTND7xX/IYH+EC4WJXodyg0NSgbnc/UPZh2pd2fq\nzUQHEdqMhQSKlrYjAff18uc5c2nsVjmewEM0ILLJTQbiaHiN7V+MxIHqXJz50M6g\nMGv0oUFemzFf/F/89KtSBp7bgzKJWLYIml/taRyWM2NaiuRtyHvERL93WmXVkuT2\nNn/RDZIQT5sW3hg0t631bnmGpBqLlgDAt/8bj0xxOjHM2QKKrwuEQlLTnMchJ+25\nlttPu5JtntUqqZkAYlHMbV10pgVULmnF4Fd29xkwYQKBgQD0d4BPdyluFy/5TLHL\ndlELWMjM0noWqSyVsgEXlowy+Wd1db82KrzlMPZBCkUZ/OckT2D3J/vyRnue+Y0O\nIV8lf3gIp/aiX+7SKkTWksJCS28oxi2WViBViSQdCH2afeguBCaJ+p4+3CXpSTOO\nmhzVJcAexUKkmb1RjZhBCz8wJwKBgQDTtvWghkgRMlr0v+Pv71/bLxGweTbMo7Iu\n2LbXnbhC9JkHZzaseofcgsZVqnRNjMwtsTZOKIHKwSjP33A7qeHodlTI7Fj+ZrgM\n7qeDsumEDWzx9aGTB7I12EDAjks0Iz0AJ7miTSbvNt/vVA1pjJmV+faY1js1k2Xs\nZ8S28TsVtQKBgQCIgc4ZEW4F9laoe4XwGdIpZttBW+omizLFKA9qD3ub3x5BPY2W\n/ohZ5lwrd0OcvlaHNPftKtuJrofK/oggMsxBUQtCsh+LDcx6eHXV5z8n651XhEni\nX5dQi/Kpb5tLUDD8uP6YH2SLrzxQJrruTun4r0q3I+kRpnNLfahd8ZzIEwKBgQCL\nHqnPXw3SRw2f0Mx+aQTLKeXs2eoZlOPMhtm3W8uuK763L6qssiO+0ix0NHsSTpgI\n2m898r4/NqiT2FaOzjZFpCRYl35vRZ5h2R04nIN4I75YTLlsvVzspvr9zUM7soAu\nLux760jPXnbOdKQPnLV76PKTQgtMTFxoeVO5h1D1FQKBgQDrBk46KWwzleaHVyco\n+f9ThEvnwmBvr5kUIE15WozU9m9d9a9q9u4yxAAXQaG08tiJNI4Fi9lxCpocroZr\nzdxE7FylJ5dDkIG2rvEbJhqMcC5cRBZO2jesKaJBDe3l/kxvDmbfYChSeZubnkrk\nse0WtJgA6uw9YlnfrgmOUM7gCA==\n-----END PRIVATE KEY-----\n",
+      "client_email": "terraformaccount@w9-challenge.iam.gserviceaccount.com",
+      "client_id": "104368160754174616865",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraformaccount%40w9-challenge.iam.gserviceaccount.com"
+    }

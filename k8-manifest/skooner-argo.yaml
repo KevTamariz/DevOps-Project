@@ -1,0 +1,31 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: skooner
+  namespace: argocd
+spec:
+  project: default
+  source:
+    chart: skooner
+    repoURL: https://christianknell.github.io/helm-charts
+    targetRevision: 0.0.3
+    helm:
+      values: |
+        ingress:
+          enabled: true
+          className: ""
+          annotations: 
+            kubernetes.io/ingress.class: "nginx"
+            cert-manager.io/cluster-issuer: letsencrypt-prod
+          hosts:
+            - host: dash.ktamariz.gq
+              paths:
+                - path: /
+                  pathType: ImplementationSpecific
+          tls: 
+            - secretName: dash.ktamariz.gq
+              hosts:
+                - dash.ktamariz.gq
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: dashboard

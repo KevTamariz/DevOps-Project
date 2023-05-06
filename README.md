@@ -24,9 +24,9 @@ Not forgetting the implementation of GitOps in this project with tools like Argo
       - app.ktamariz.gq
       - dash.ktamariz.gq
       - monitor.ktamariz.gq
-  ![W9-Diagram](https://user-images.githubusercontent.com/92232117/235319247-fab0ba31-193c-4947-9814-4f2d9c20d4df.png)
-    
-      
+![image](https://user-images.githubusercontent.com/92232117/236646064-f82365db-9b45-428e-88e3-ebe206a28e50.png)
+
+          
 # Kubernetes
 - Argo CD:
     - My app
@@ -36,3 +36,5 @@ Not forgetting the implementation of GitOps in this project with tools like Argo
     - KEDA
     - Example HPA
     - External Secrets
+
+![image](https://user-images.githubusercontent.com/92232117/236646074-f8b2cb9c-3862-4359-a8bc-10d0981103bf.png)
